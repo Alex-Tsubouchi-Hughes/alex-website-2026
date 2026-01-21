@@ -1,0 +1,1675 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box
+}
+
+
+/* Body */
+body, html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+}
+
+
+/* Tool Bar Styles */
+.tool-bar{
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transition: top 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+}
+.tool-bar-english-start{
+  margin-left: 75px;
+  margin-right: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.tool-bar-english{
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.tool-bar-language{
+  margin-left: 25px;
+  margin-right: 75px;
+  margin-left: 7px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.tool-bar-english-text{
+  color: rgb(69, 101, 173);
+}
+.tool-bar-japanese-text{
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(230, 51, 49);
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.divider{
+  border-left: 3px solid rgb(230, 51, 49);
+  height: 33px;
+  margin-top: 7px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.tool-bar-english-end-text{
+  color: rgb(69, 101, 173);
+  margin-left: 7px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.tool-bar-english-text:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+  color: rgb(230, 51, 49);
+}
+.tool-bar-english-end-text:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+  color: rgb(230, 51, 49);
+}
+.tool-bar-japanese-text:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+  color: rgb(69, 101, 173);
+}
+.tool-bar-logo-left{
+  height: 115px;
+  display: flex;
+  align-items: center;
+  padding-left: 75px;
+  position: fixed;
+  top: 43.5%;
+  left: 0px;
+  z-index: 400;
+  transition: left 1s;
+}
+
+
+/* Phone & HD Tool Bar Styles (hidden)*/
+.tool-bar-phone{
+  display: none;
+}
+.tool-bar-HD{
+  display: none;
+}
+
+
+/* Main Video Styles */
+.video-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;   
+  pointer-events: none;
+  z-index: 0;
+}
+.video-poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  min-width: 177.78vh;
+  min-height: 56.25vw;
+  transform: translate(-50%, -50%);
+  border: 0;
+}
+
+
+/* Logo & Logo Image Styles */
+#alexjplogo-container{
+  width: 113px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#alexjplogo {
+  max-width: 100%;
+  height: auto;
+}
+.tool-bar-logo-right{
+  height: 115px;
+  display: flex;
+  align-items: center;
+  padding-right: 75px;
+  position: fixed;
+  top: 43.5%;
+  right: 0px;
+  z-index: 400;
+  transition: right 1s;
+}
+#alexlogo-container{
+  width: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#alexlogo {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Text Grid */
+.home-title-text{
+  text-align: center;
+  width:860px;
+}
+.home-body-text{
+  text-align: center;
+  width:875px;
+}
+/* Work Grid */
+.work-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+}
+/* About Grid */
+.about-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+}
+.about-sub-container{
+  display: flex;
+  justify-content: space-between;
+}
+.work-experience{
+  padding-left: 75px;
+}
+.education{
+  padding-left: 50px;
+}
+.competitions{
+  padding-left: 50px;
+  padding-right: 75px;
+}
+/* About Grid (hidden) */
+.phone-about-sub-container{
+  display: none;
+}
+.HD-about-sub-container{
+  display: none;
+}
+.XL-HD-about-sub-container{
+  display: none;
+}
+/* Contact Grid */
+.contact-container{
+  position: relative;
+  height: 100vh;
+}
+.contact-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+}
+.contact-email{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 345px;
+}
+.contact-email-text{
+  text-align: center;
+}
+.footer{
+  position: absolute;
+  width:100%;
+  bottom: 38px;
+}
+.contact-socials{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.instagram{
+  padding-left: 75px;
+}
+.linkedin{
+  padding-right: 75px;
+}
+
+
+/* Image Styles and Grid */
+.portfolio{
+  display: grid; 
+  padding-right: 50px;
+  padding-left: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+.portfolio-3x3{
+  display: none; 
+}
+.work-image-container{
+  position: relative;
+  padding: 25px 25px 25px 25px;
+}
+.work-image-container:hover .work-image-red-overlay{
+  transition: 0.25s ease;
+  opacity: 0.5;
+}
+.work-image-container:hover .work-image-blue-overlay{
+  transition: 0.25s ease;
+  opacity: 0.5;
+}
+.work-image-container:hover .work-image-text{
+  transition: 0.25s ease;
+  opacity: 1;
+}
+.work-image{
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.work-image-red-overlay{
+  position: absolute;
+  top: 25px;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+  opacity: 0;
+  transition: 0.25s ease;
+  background-color: rgb(230, 51, 49);
+  z-index: 50;
+}
+.work-image-blue-overlay{
+  position: absolute;
+  top: 25px;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+  opacity: 0;
+  transition: 0.25s ease;
+  background-color: rgb(69, 101, 173);
+  z-index: 50;
+}
+.work-image-text{
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 30px;
+  opacity:0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 100;
+}
+.work-image-text-en{
+  font-variant-ligatures: contextual;
+  -moz-font-feature-settings: "calt";
+  -webkit-font-feature-settings: "calt";
+  font-feature-settings: "calt";
+  font-family: "houschka-rounded", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  font-size: 30px;
+}
+.head-shot-grid-1{
+  display: grid; 
+  padding-right: 75px;
+  padding-left: 75px;
+  grid-template-columns: 1fr;
+}
+.head-shot-grid-1-phone{
+  display: none; 
+}
+.head-shot-grid-2{
+  display: grid; 
+  padding-right: 75px;
+  padding-left: 75px;
+  padding-bottom: 75px;
+  grid-template-columns: 1fr 1fr;
+}
+.head-shot-image{
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.head-shot-image-container-1{
+  padding-top: 10px;
+  padding-right: 5px;
+}
+.head-shot-image-container-2{
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+
+/* Text & Font Styles */
+.text-gap{
+  margin-bottom: 10px;
+  display: block;
+}
+.HD-text-gap{
+  margin-bottom: 15px;
+  display: block;
+}
+.text-red{
+  color: rgb(230, 51, 49);
+}
+.text-blue{
+  color: rgb(69, 101, 173);
+}
+.about-sub-title{
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+}
+.about-sub-text{
+  font-size: 24px;
+}
+.about-sub-text-jp{
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+p{
+  font-variant-ligatures: contextual;
+  -moz-font-feature-settings: "calt";
+  -webkit-font-feature-settings: "calt";
+  font-feature-settings: "calt";
+  font-family: "houschka-rounded", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(230, 51, 49);
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+h1{
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(230, 51, 49);
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+h2{
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(230, 51, 49);
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+h3{
+  font-variant-ligatures: contextual;
+  -moz-font-feature-settings: "calt";
+  -webkit-font-feature-settings: "calt";
+  font-feature-settings: "calt";
+  font-family: "houschka-rounded", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(69, 101, 173);
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+
+/* Screen Size above 3840px */
+@media only screen and (min-width: 3840px){
+/* HD Tool Bar Styles */
+.tool-bar-HD{
+  display: flex;
+  flex-direction: row;
+  transition: top 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 499;
+  margin-left: 134px;
+  margin-top: 55px;
+}
+.logo-gap{
+  padding-right: 20px;
+}
+.tool-bar{
+  height: 197px;
+  display: flex;
+  flex-direction: row;
+  align-items:right;
+  justify-content: flex-end;
+}
+.tool-bar-english-start{
+  margin-left: 134px;
+  margin-right: 44px;
+}
+.tool-bar-english{
+  margin-left: 44px;
+  margin-right: 44px;
+}
+.tool-bar-language{
+  margin-left: 44px;
+  margin-right: 134px;
+  margin-left: 12px;
+}
+.divider{  
+  margin-top: 12px;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+
+/* Logo & Logo Image Styles */
+.tool-bar-logo-left{
+  height: 206px;
+  padding-left: 134px;
+}
+.tool-bar-logo-right{
+  height: 206px;
+  padding-right: 134px;
+}
+#alexjplogo-container{
+  width: 202px;
+}
+#alexlogo-container{
+  width: 187px;
+}
+
+
+/* Text Grid */
+.home-title-text{
+  width:1728px;
+}
+.home-body-text{
+  width:1758px;
+}
+/* About Grid */
+.XL-HD-about-sub-container{
+  display: flex;
+  justify-content: space-between;
+}
+.work-experience{
+  padding-left: 134px;
+}
+.competitions{
+  padding-right: 134px;
+}
+/* About Grid (hidden) */
+.about-sub-container{
+  display: none;
+}
+/* Contact Grid */
+.contact-text{
+  height: 1129px;
+}
+.contact-email{
+  height: 928px;
+}
+.instagram{
+  padding-left: 134px;
+}
+.linkedin{
+  padding-right: 134px;
+}
+.footer{
+  bottom: 67px;
+}
+  h3{
+  margin-bottom: 17px;
+}
+
+
+/* Image Styles and Grid */
+.portfolio-3x3{
+  display: grid; 
+  padding-right: 109px;
+  padding-left: 109px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio{
+  display: none;
+}
+.head-shot-grid-1{
+  padding-right: 134px;
+  padding-left: 134px;
+}
+.head-shot-grid-2{
+  padding-right: 134px;
+  padding-left: 134px;
+  padding-bottom: 134px;
+}
+.head-shot-image-container-1{
+  padding-top: 10px;
+  padding-right: 5px;
+}
+.head-shot-image-container-2{
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+
+/* Text & Font Styles */
+.text-gap{
+  margin-bottom: 15px;
+}
+.about-sub-title{
+  font-size: 26px;
+}
+.about-sub-text{
+  font-size: 26px;
+}
+.about-sub-text-jp{
+  font-size: 26px;
+}
+}
+
+
+/* Screen Size above 2560px and below 3840px */
+@media only screen and (min-width: 2560px) and (max-width: 3839px){
+
+
+/* HD Tool Bar Styles */
+.tool-bar-HD{
+  display: flex;
+  flex-direction: row;
+  transition: top 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 499;
+  margin-left: 134px;
+  margin-top: 55px;
+}
+.logo-gap{
+  padding-right: 20px;
+}
+.tool-bar{
+  height: 197px;
+  display: flex;
+  flex-direction: row;
+  align-items:right;
+  justify-content: flex-end;
+}
+.tool-bar-english-start{
+  margin-left: 134px;
+  margin-right: 44px;
+}
+.tool-bar-english{
+  margin-left: 44px;
+  margin-right: 44px;
+}
+.tool-bar-language{
+  margin-left: 44px;
+  margin-right: 134px;
+  margin-left: 12px;
+}
+.divider{  
+  margin-top: 12px;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+
+/* Logo & Logo Image Styles */
+.tool-bar-logo-left{
+  height: 206px;
+  padding-left: 134px;
+}
+.tool-bar-logo-right{
+  height: 206px;
+  padding-right: 134px;
+}
+#alexjplogo-container{
+  width: 202px;
+}
+#alexlogo-container{
+  width: 187px;
+}
+
+
+/* Text Grid */
+.home-title-text{
+  width:1152px;
+}
+.home-body-text{
+  width:1172px;
+}
+/* About Grid */
+.HD-about-sub-container{
+  display: flex;
+  justify-content: space-between;
+}
+.work-experience{
+  padding-left: 134px;
+}
+.competitions{
+  padding-right: 134px;
+}
+/* About Grid (hidden) */
+.about-sub-container{
+  display: none;
+}
+/* Contact Grid */
+.contact-text{
+  height: 753px;
+}
+.contact-email{
+  height: 619px;
+}
+.instagram{
+  padding-left: 134px;
+}
+.linkedin{
+  padding-right: 134px;
+}
+.footer{
+  bottom: 67px;
+}
+h3{
+  margin-bottom: 17px;
+}
+
+  
+/* Image Styles and Grid */
+.portfolio-3x3{
+  display: grid; 
+  padding-right: 109px;
+  padding-left: 109px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio{
+  display: none;
+}
+.head-shot-grid-1{
+  padding-right: 134px;
+  padding-left: 134px;
+}
+.head-shot-grid-2{
+  padding-right: 134px;
+  padding-left: 134px;
+  padding-bottom: 134px;
+}
+.head-shot-image-container-1{
+  padding-top: 10px;
+  padding-right: 5px;
+}
+.head-shot-image-container-2{
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+
+/* Text & Font Styles */
+.text-gap{
+  margin-bottom: 15px;
+}
+.about-sub-title{
+  font-size: 26px;
+}
+.about-sub-text{
+  font-size: 26px;
+}
+.about-sub-text-jp{
+  font-size: 26px;
+}
+}
+
+
+/* Screen Size above 1920px and below 2560px */
+@media only screen and (min-width: 1920px) and (max-width: 2559px){
+ 
+
+/* Tool Bar Styles */
+.tool-bar{
+  height: 147px;
+}
+.tool-bar-english-start{
+  margin-left: 100px;
+  margin-right: 33px;
+}
+.tool-bar-english{
+  margin-left: 33px;
+  margin-right: 33px;
+}
+.tool-bar-language{
+  margin-left: 33px;
+  margin-right: 100px;
+  margin-left: 9px;
+}
+.divider{  
+  margin-top: 9px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+
+/* Logo & Logo Image Styles */
+.tool-bar-logo-left{
+  height: 154px;
+  padding-left: 100px;
+}
+.tool-bar-logo-right{
+  height: 154px;
+  padding-right: 100px;
+}
+#alexjplogo-container{
+  width: 151px;
+}
+#alexlogo-container{
+  width: 140px;
+}
+
+
+/* Text Grid */
+/* About Grid */
+.HD-about-sub-container{
+  display: flex;
+  justify-content: space-between;
+}
+.work-experience{
+  padding-left: 100px;
+}
+.competitions{
+  padding-right: 100px;
+}
+/* About Grid (hidden) */
+.about-sub-container{
+  display: none;
+}
+/* Contact Grid */
+.contact-text{
+  height: 562px;
+}
+.contact-email{
+  height: 462px;
+}
+.instagram{
+  padding-left: 100px;
+}
+.linkedin{
+  padding-right: 100px;
+}
+.footer{
+  bottom: 50px;
+}
+h3{
+  margin-bottom: 13px;
+}
+  
+
+/* Image Styles and Grid */
+.portfolio{
+  display: grid; 
+  padding-right: 75px;
+  padding-left: 75px;
+  grid-template-columns: 1fr 1fr;
+}
+.head-shot-grid-1{
+  padding-right: 100px;
+  padding-left: 100px;
+}
+.head-shot-grid-2{
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+}
+.head-shot-image-container-1{
+  padding-top: 10px;
+  padding-right: 5px;
+}
+.head-shot-image-container-2{
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+/* Text & Font Styles */
+.text-gap{
+  margin-bottom: 15px;
+}
+.about-sub-title{
+  font-size: 26px;
+}
+.about-sub-text{
+  font-size: 26px;
+}
+.about-sub-text-jp{
+  font-size: 26px;
+}
+}
+
+
+/* Screen Size above 1600px and below 1920px */
+@media only screen and (min-width: 1600px) and (max-width: 1919px){
+
+
+  /* Text Grid */
+/* About Grid */
+.HD-about-sub-container{
+  display: flex;
+  justify-content: space-between;
+}
+/* About Grid (hidden) */
+.about-sub-container{
+  display: none;
+}
+
+
+/* Text & Font Styles */
+.text-gap{
+  margin-bottom: 15px;
+}
+}
+
+
+/* Screen Size above 990px and below 1200px */
+@media only screen and (min-width: 991px) and (max-width: 1200px){
+
+/* Tool Bar Styles */
+.tool-bar{
+  height: 82px;
+}
+.tool-bar-english-start{
+  margin-left: 56px;
+  margin-right: 19px;
+}
+.tool-bar-english{
+  margin-left: 19px;
+  margin-right: 19px;
+}
+.tool-bar-language{
+  margin-left: 19px;
+  margin-right: 56px;
+  margin-left: 5px;
+}
+.divider{
+  border-left: 2px solid rgb(230, 51, 49);
+  height: 25px;
+  margin-top: 5px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.tool-bar-japanese-text{
+  font-size: 22px;
+}
+
+
+/* Logo & Logo Image Styles */
+.tool-bar-logo-left{
+  height: 86px;
+  padding-left: 56px;
+}
+.tool-bar-logo-right{
+  height: 86px;
+  padding-right: 56px;
+}
+#alexjplogo-container{
+  width: 85px;
+}
+#alexlogo-container{
+  width: 79px;
+}
+
+
+/* Text Grid */
+.home-title-text{
+  width:645px;
+}
+.home-body-text{
+  width:655px;
+}
+/* Work Grid */
+.work-text{
+  height: 315px;
+}
+/* About Grid */
+.about-text{
+  height: 315px;
+}
+.work-experience{
+  padding-left: 56px;
+}
+.education{
+  padding-left: 37px;
+}
+.competitions{
+  padding-left: 37px;
+  padding-right: 56px;
+}
+/* Contact Grid */
+.contact-text{
+  height: 315px;
+}
+.contact-email{
+  height: 255px;
+}
+.instagram{
+  padding-left: 56px;
+}
+.linkedin{
+  padding-right: 56px;
+}
+.footer{
+  bottom: 28px;
+}
+h3{
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+/* Image Styles and Grid */
+.portfolio{
+  display: grid; 
+  padding-right: 37px;
+  padding-left: 37px;
+  grid-template-columns: 1fr 1fr;
+}
+.work-image-container{
+  padding: 19px 19px 19px 19px;
+}
+.work-image-red-overlay{
+  top: 19px;
+  bottom: 19px;
+  left: 19px;
+  right: 19px;
+}
+.work-image-blue-overlay{
+  top: 19px;
+  bottom: 19px;
+  left: 19px;
+  right: 19px;
+}
+.work-image-text{
+  font-size: 22px;
+}
+.work-image-text-jp{
+  font-size: 22px;
+}
+.work-image-text-en{
+  font-size: 22px;
+}
+.head-shot-grid-1{
+  padding-right: 56px;
+  padding-left: 56px;
+}
+.head-shot-grid-2{
+  padding-right: 56px;
+  padding-left: 56px;
+  padding-bottom: 56px;
+}
+.head-shot-image-container-1{
+  padding-top: 8px;
+  padding-right: 4px;
+}
+.head-shot-image-container-2{
+  padding-top: 8px;
+  padding-left: 4px;
+}
+
+
+/* Text & Font Styles */
+.about-sub-title{
+  font-size: 18px;
+}
+.about-sub-text{
+  font-size: 18px;
+}
+.about-sub-text-jp{
+  font-size: 18px;
+}
+p{
+  font-size: 22px;
+}
+h1{
+  font-size: 22px;
+}
+h2{
+  font-size: 22px;
+}
+}
+
+
+/* Screen Size above 770px and below 990px */
+@media only screen and (min-width: 771px) and (max-width: 990px){
+
+
+/* Tool Bar Styles */
+.tool-bar{
+  height: 66px;
+}
+.tool-bar-english-start{
+  margin-left: 45px;
+  margin-right: 19px;
+}
+.tool-bar-english{
+  margin-left: 19px;
+  margin-right: 19px;
+}
+.tool-bar-language{
+  margin-left: 19px;
+  margin-right: 45px;
+  margin-left: 5px;
+}
+.divider{
+  border-left: 2px solid rgb(230, 51, 49);
+  height: 25px;
+  margin-top: 5px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.tool-bar-japanese-text{
+  font-size: 20px;
+}
+
+
+/* Logo & Logo Image Styles */
+.tool-bar-logo-left{
+  height: 86px;
+  padding-left: 45px;
+}
+.tool-bar-logo-right{
+  height: 86px;
+  padding-right: 45px;
+}
+#alexjplogo-container{
+  width: 85px;
+}
+#alexlogo-container{
+  width: 79px;
+}
+
+
+/* Text Grid */
+.home-title-text{
+  width:645px;
+}
+.home-body-text{
+  width:655px;
+}
+/* Work Grid */
+.work-text{
+  height: 315px;
+}
+/* About Grid */
+.about-text{
+  height: 315px;
+}
+.work-experience{
+  padding-left: 45px;
+}
+.education{
+  padding-left: 30px;
+}
+.competitions{
+  padding-left: 30px;
+  padding-right: 45px;
+}
+/* Contact Grid */
+.contact-text{
+  height: 315px;
+}
+.contact-email{
+  height: 255px;
+}
+.instagram{
+  padding-left: 45px;
+}
+.linkedin{
+  padding-right: 45px;
+}
+.footer{
+  bottom: 22px;
+}
+h3{
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+
+/* Image Styles and Grid */
+.portfolio{
+  display: grid; 
+  padding-right: 30px;
+  padding-left: 30px;
+  grid-template-columns: 1fr;
+  }
+.work-image-container{
+  padding: 15px 15px 15px 15px;
+}
+.work-image-red-overlay{
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+}
+.work-image-blue-overlay{
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+}
+.work-image-text{
+  font-size: 20px;
+}
+.work-image-text-jp{
+  font-size: 20px;
+}
+.work-image-text-en{
+  font-size: 20px;
+}
+.head-shot-grid-1{
+  padding-right: 45px;
+  padding-left: 45px;
+}
+.head-shot-grid-2{
+  padding-right: 45px;
+  padding-left: 45px;
+  padding-bottom: 45px;
+}
+.head-shot-image-container-1{
+  padding-top: 6px;
+  padding-right: 3px;
+}
+.head-shot-image-container-2{
+  padding-top: 6px;
+  padding-left: 3px;
+}
+
+/* Text & Font Styles */
+.about-sub-title{
+  font-size: 16px;
+}
+.about-sub-text{
+  font-size: 16px;
+}
+.about-sub-text-jp{
+  font-size: 16px;
+}
+p{
+  font-size: 20px;
+}
+h1{
+  font-size: 20px;
+}
+h2{
+  font-size: 20px;
+}
+}
+
+
+/* Screen Size above 600px and below 770px */
+@media only screen and (min-width: 601px) and (max-width: 770px){
+
+
+/* Tool Bar Styles */
+.tool-bar{
+  height: 66px;
+}
+.tool-bar-english-start{
+  margin-left: 45px;
+  margin-right: 19px;
+}
+.tool-bar-english{
+  margin-left: 19px;
+  margin-right: 19px;
+}
+.tool-bar-language{
+  margin-left: 19px;
+  margin-right: 45px;
+  margin-left: 5px;
+}
+.divider{
+  border-left: 2px solid rgb(230, 51, 49);
+  height: 25px;
+  margin-top: 5px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.tool-bar-japanese-text{
+  font-size: 20px;
+}
+
+
+/* Logo & Logo Image Styles */
+.tool-bar-logo-left{
+  height: 86px;
+  padding-left: 45px;
+}
+.tool-bar-logo-right{
+  height: 86px;
+  padding-right: 45px;
+}
+#alexjplogo-container{
+  width: 85px;
+}
+#alexlogo-container{
+  width: 79px;
+}
+
+
+/* Text Grid */
+.home-title-text{
+  width:500px;
+}
+.home-body-text{
+  width:500px;
+}
+/* Work Grid */
+.work-text{
+  height: 315px;
+}
+/* About Grid */
+.about-text{
+  height: 315px;
+}
+.work-experience{
+  padding-left: 45px;
+}
+.education{
+  padding-left: 0px;
+}
+.competitions{
+  padding-left: 0px;
+  padding-right: 45px;
+}
+/* Contact Grid */
+.contact-text{
+  height: 315px;
+}
+.contact-email{
+  height: 255px;
+}
+.instagram{
+  padding-left: 45px;
+}
+.linkedin{
+  padding-right: 45px;
+}
+.footer{
+  bottom: 22px;
+}
+h3{
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+
+/* Image Styles and Grid */
+.portfolio{
+  display: grid; 
+  padding-right: 30px;
+  padding-left: 30px;
+  grid-template-columns: 1fr;
+  }
+.work-image-container{
+  padding: 15px 15px 15px 15px;
+}
+.work-image-red-overlay{
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+}
+.work-image-blue-overlay{
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+}
+.work-image-text{
+  font-size: 20px;
+}
+.work-image-text-jp{
+  font-size: 20px;
+}
+.work-image-text-en{
+  font-size: 20px;
+}
+.head-shot-grid-1{
+  padding-right: 45px;
+  padding-left: 45px;
+}
+.head-shot-grid-2{
+  padding-right: 45px;
+  padding-left: 45px;
+  padding-bottom: 45px;
+}
+.head-shot-image-container-1{
+  padding-top: 6px;
+  padding-right: 3px;
+}
+.head-shot-image-container-2{
+  padding-top: 6px;
+  padding-left: 3px;
+}
+
+
+/* Text & Font Styles */
+.about-sub-title{
+  font-size: 14px;
+}
+.about-sub-text{
+  font-size: 14px;
+}
+.about-sub-text-jp{
+  font-size: 14px;
+}
+p{
+  font-size: 20px;
+}
+h1{
+  font-size: 20px;
+}
+h2{
+  font-size: 20px;
+}
+}
+
+
+/* Screen Size below 600px */
+@media only screen and (max-width: 600px){
+
+
+/* Phone Tool Bar Styles */
+.tool-bar-phone{
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
+  display: flex;
+  transition: top 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+}
+.phone-links-bg{
+  display: none;
+  z-index: -100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  vertical-align: middle;
+  background-color: white;
+  opacity: 0.75;
+  height: 275px;
+  width: 100vh;
+}
+.tool-bar-phone #phone-links {
+  display: none;
+}
+.phone-links {
+  padding-top: 35px;
+  position: block;
+  display: none;
+}
+.tool-bar-phone a {
+  text-decoration: none;
+  display: block;
+}
+.phone-text{
+  z-index: 500;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  display: block;
+  text-align: center;
+}
+.logo-phone-en{
+  left: 15px;
+  top: 15px;
+  position: absolute;
+  height: 30px;
+}
+.logo-phone-jp{
+  left: 50px;
+  top: 15px;
+  position: absolute;
+  height: 30px;
+}
+.hamburger-icon-en{
+  height: 20px;
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  overflow: hidden;
+}
+.tool-bar-english-text{
+  color: rgb(69, 101, 173);
+  z-index: 500;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+.tool-bar-japanese-text{
+  z-index: 500;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+.tool-bar-english-text:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  color: rgb(230, 51, 49);
+}
+.tool-bar-japanese-text:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  color: rgb(69, 101, 173);
+}
+/* Tool Bar (hidden) */
+.tool-bar{
+  display: none;
+}
+.tool-bar-logo-left{
+  display: none;
+}
+.tool-bar-logo-right{
+  display: none;
+}
+
+
+/* Main Video Styles */
+.video-container {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;   
+  z-index: 0;
+}
+.video-container iframe {
+  width: 124.3vh; 
+}
+
+
+/* Text Grid */
+.home-title-text{
+  width: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.home-body-text{
+  width: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+/* Work Grid */
+.work-text{
+  height: 315px;
+}
+/* About Grid */
+.phone-about-sub-container{
+  display: block;
+}
+.about-text{
+  height: 315px;
+}
+.work-experience{
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+}
+.education{
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+}
+.competitions{
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* About Grid (hidden)*/
+.about-sub-container{
+  display: none;
+}
+/* Contact Grid */
+.contact-text{
+  height: 315px;
+}
+.contact-email{
+  height: 255px;
+}
+.instagram{
+  padding-left: 30px;
+}
+.linkedin{
+  padding-right: 30px;
+}
+.footer{
+  bottom: 22px;
+}
+h3{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+
+/* Image Styles and Grid */
+.portfolio{
+  display: grid; 
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+  grid-template-columns: 1fr;
+  }
+.work-image-container{
+  padding: 7.5px 7.5px 7.5px 7.5px;
+}
+.work-image-red-overlay{
+  top: 7.5px;
+  bottom: 7.5px;
+  left: 7.5px;
+  right: 7.5px;
+}
+.work-image-blue-overlay{
+  top: 7.5px;
+  bottom: 7.5px;
+  left: 7.5px;
+  right: 7.5px;
+}
+.work-image-text{
+  font-size: 20px;
+}
+.work-image-text-jp{
+  font-size: 20px;
+}
+.work-image-text-en{
+  font-size: 20px;
+}
+.head-shot-grid-1{
+  display: none; 
+}
+.head-shot-grid-1-phone{
+  display: grid; 
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  grid-template-columns: 1fr;
+}
+.head-shot-grid-2{
+  display: none; 
+}
+.head-shot-image-container-1{
+  padding-top: 4px;
+  padding-right: 2px;
+}
+.head-shot-image-container-2{
+  padding-top: 4px;
+  padding-left: 2px;
+}
+
+
+/* Text & Font Styles */
+.text-gap{
+  margin-bottom: 5px;
+  }
+.about-sub-title{
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+.about-sub-text{
+  font-size: 16px;
+}
+.about-sub-text-jp{
+  font-size: 16px;
+}
+p{
+  font-size: 18px;
+}
+h1{
+  font-size: 18px;
+}
+h2{
+  font-size: 18px;
+}
+}
